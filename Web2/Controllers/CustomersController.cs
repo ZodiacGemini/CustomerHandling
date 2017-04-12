@@ -36,5 +36,18 @@ namespace Web2.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [HttpGet]
+        public IActionResult Update(int id)
+        {
+            ViewBag.Customer = DataManager.GetCustomer(id);
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Update(Customer customer)
+        {
+            DataManager.UpdateCustomer(customer);
+            return RedirectToAction(nameof(Index));
+        }
+
     }
 }

@@ -28,7 +28,8 @@
                             <td>@customer.CompanyName</td>
                             <td>@customer.Address</td>
                             <td>@customer.EmployeeCount</td>
-                            <td><form action="/customers/delete/@customer.Id" method="post"><input type="submit" class="btn btn-default" value="Remove" /></form></td>
+                            <td><form action="/customers/delete/@customer.Id" method="post"><input type="submit" class="btn btn-default" style="display: block; width: 45%; float: left;" value="Remove" /></form>
+                            <form action="/customers/update/@customer.Id" method="get"><input type="submit" class="btn btn-default" value="Update" style="display: block; width: 45%; float: right;"/></form></td>
                         </tr>
                     }
                 </tbody>

@@ -28,5 +28,16 @@ namespace Web2.Models
         {
             customerList.Remove(customerList.SingleOrDefault(c => c.Id == id));
         }
+
+        public static Customer GetCustomer(int id)
+        {
+            return customerList.SingleOrDefault(c => c.Id == id);
+        }
+
+        public static void UpdateCustomer(Customer customer)
+        {
+            var index = customerList.FindIndex(c => c.Id == customer.Id);
+            customerList[index] = customer;
+        }
     }
 }
