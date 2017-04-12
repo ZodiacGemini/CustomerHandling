@@ -8,15 +8,17 @@
     <script src="~/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1 class="jumbotron" style="text-align:center">Customerlist</h1>
-    <div class="table-responsive">
-        
+    <div id="wrapper" style="max-width: 70%; margin: auto;">
+        <h1 class="jumbotron" style="text-align:center">Customerlist</h1>
+        <div class="table-responsive">
+
             <table class="table">
                 <thead>
                     <tr>
                         <th>Company name</th>
                         <th>Adress</th>
                         <th>Number of employees</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -31,9 +33,10 @@
                     }
                 </tbody>
             </table>
-    </div>
-    <div style="display: flex; flex-direction: column; justify-content: center;">
-        <a href="/customers/create" class="btn btn-default" style="margin-top:30px; width: 50%; margin: auto;">Add customer</a>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+            <a href="/customers/create" class="btn btn-default" style="margin-top:30px; width: 50%; margin: auto;">Add customer</a>
+        </div>
     </div>
 </body>
 </html>

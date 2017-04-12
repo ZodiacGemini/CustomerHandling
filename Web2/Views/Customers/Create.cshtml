@@ -8,29 +8,31 @@
     <script src="~/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1 class="jumbotron" style="text-align:center">Add customer</h1>
-    <div class="table-responsive">
-        <form action="/customers/create" method="post">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Company name</th>
-                        <th>Adress</th>
-                        <th>Number of employees</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><input class="input-lg" style="width: 100%;" type="text" name="Address" /></td>
-                        <td><input class="input-lg" style="width: 100%;" type="text" name="CompanyName" /></td>
-                        <td><input class="input-lg" style="width: 100%;" type="text" name="EmployeeCount" /></td>
-                    </tr>
-                </tbody>
-            </table>
-            <div style="display: flex; flex-direction: column; justify-content: center;">
-                <input type="submit" value="Add" class="btn btn-default" style="margin-top:30px; margin: auto; width: 20%;" />
-            </div>
-        </form>
+    <div id="wrapper" style="max-width: 70%; margin: auto;">
+        <h1 class="jumbotron" style="text-align:center">Add customer</h1>
+        <div class="table-responsive">
+            <form action="/customers/create" method="post">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Company name</th>
+                            <th>Adress</th>
+                            <th>Number of employees</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input class="input-lg" style="width: 100%;" type="text" name="Address" /></td>
+                            <td><input class="input-lg" style="width: 100%;" type="text" name="CompanyName" /></td>
+                            <td><input class="input-lg" style="width: 100%;" type="text" name="EmployeeCount" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="display: flex; flex-direction: column; justify-content: center;">
+                    <input type="submit" value="Add" class="btn btn-default" style="margin-top:30px; margin: auto; width: 50%;" />
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
